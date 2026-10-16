@@ -1,0 +1,13 @@
+SOFTWARE LICENCE AGREEMENT - School Result and Accounting Management System
+OKV Technology Consults
+
+1. Grant. OKV grants your school a non-exclusive, non-transferable licence to install and use this software on its own computers for its own administration. The free trial lasts 12 days from first use. After activation the licence has no time limit.
+2. One licence, one school. One activation code covers one school installation. You may not resell the software, give your code to another school or use it as a service for other schools.
+3. Restrictions. You may not copy the software for distribution, remove or bypass licence checks, or reverse engineer it except where the law allows.
+4. Ownership. OKV keeps all rights in the software, manuals and branding. Your school owns its data.
+5. Your data. The software stores data on your own computer. You are responsible for downloading backups regularly.
+6. Support. Help is available by email technologyokv@gmail.com and WhatsApp +234 810 414 1138. Installation and training services are quoted separately.
+7. Warranty. The software is provided as is. Check all results, invoices and receipts before issuing them. To the extent the law allows, OKV is not liable for indirect loss, and its liability is limited to the amount you paid.
+8. Governing law. This agreement is governed by the laws of the Federal Republic of Nigeria.
+
+The full Privacy Policy, Terms of Use and Cookie Policy are available inside the software (links at the bottom of every page).

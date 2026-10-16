@@ -1,0 +1,57 @@
+SCHOOL RESULT AND ACCOUNTING MANAGEMENT SYSTEM
+Installation and first-use instructions - OKV Technology Consults
+===============================================================
+
+WHAT YOU NEED
+  One computer for the school (Windows 7, 8, 10, 11 - 32-bit or 64-bit - or a Mac).
+  Nothing else. You do NOT need to install Python or any other program.
+
+INSTALL ON WINDOWS
+  1. Double-click SchoolSystemSetup.exe. If Windows asks "Do you want to allow this app to make changes?", choose Yes.
+  2. Press Next through the wizard. Keep "Start automatically when this computer starts" ticked so the system is ready every morning.
+  3. Press Finish. Your browser opens the system by itself.
+  4. Windows may ask about the firewall. Choose "Allow access" for private networks so staff phones can connect.
+
+INSTALL ON MAC
+  1. Open SchoolSystem.dmg and drag "School System" into the Applications folder.
+  2. Open it from Applications. The first time, right-click it, choose Open, then Open again (Mac asks because the app is from an independent developer).
+  3. If the Mac asks to "accept incoming network connections", press Allow so staff phones can connect.
+
+SIGN IN FOR THE FIRST TIME
+  Address:   http://localhost:8080   (opens automatically)
+  Username:  admin
+  Password:  admin123
+  1. Change the password at once (Password button, top right).
+  2. Write down the RECOVERY KEY the system shows you. You need it if you forget the password.
+  3. Admin > Settings: type your school name, address, motto and upload the crest.
+  4. Academics > Classes & subjects: press "Add standard classes" (KG to SS 3).
+  5. Accounting > Fee schedule: enter the fees for each class.
+  6. Academics > Pupils: add pupils (or Import list).
+  7. Admin > Users: create logins for teachers and your accountant.
+  8. Classes & subjects > Edit a class: choose 1, 2 or 3 C.A tests and the grading format (A to F, or A1, B2, B3 ...).
+  9. Admin > Customize: colour theme, report sheet design, automatic or manual remarks and signatures, admissions.
+  10. Academics > Import & export: bring in pupils, scores, fees and more from CSV (download the template first) and export any list to Excel, CSV, JSON or text.
+  11. Academics > Admissions: take applications, admit pupils and print admission letters.
+
+USE ON PHONES, TABLETS AND OTHER COMPUTERS
+  Connect them to the SAME Wi-Fi or network as the school computer. Easiest way: press "Phone (QR)" at the top of the screen and scan the code with the phone camera. The code only opens the web address. It does NOT sign anyone in: each person types their own username and password. You can also type the address shown in Admin > Settings, for example http://192.168.1.10:8080. No app to install. The screens fit phones, tablets and computers.
+
+FREE TRIAL AND ACTIVATION
+  The system works fully for 12 days. To keep using it:
+  1. Sign in as admin and open Admin > License.
+  2. Press "Buy full version / get activation code". This opens our pricing page (one payment of NGN 120,000, no monthly fees).
+  3. Pay by bank transfer and upload your receipt, or pay online with Paystack.
+  4. Your activation code is emailed within 24 hours.
+  5. Type the code on the License page and press Activate. The computer must be online for this one step.
+  Your data is never deleted when the trial ends.
+
+BACKUPS
+  Admin > Settings > Download backup. Do this every week and keep the file on a flash drive.
+  Your data lives in: Windows  C:\ProgramData\SchoolSystem      Mac  ~/Library/Application Support/SchoolSystem
+
+MANUALS
+  Every dashboard has a "User manual (PDF)" button written for your role: administrator, teacher, accountant, pupil.
+
+NEED HELP OR WANT US TO INSTALL IT FOR YOU?
+  OKV Technology Consults offers installation and staff-training services, on site or remotely.
+  Email technologyokv@gmail.com   WhatsApp +234 810 414 1138   www.okvtechnology.com
