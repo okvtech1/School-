@@ -1,0 +1,34 @@
+# Builds the Windows Setup.exe and the Mac .dmg files in the cloud, so you do not need a Windows PC or a Mac.
+# Put this kit in a GitHub repository (private is fine), open the Actions tab and run "Build installers".
+name: Build installers
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+jobs:
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.8', architecture: 'x86' }   # 32-bit build runs on 32-bit and 64-bit Windows 7 to 11
+      - run: python -m pip install --upgrade pip pyinstaller==5.13.2
+      - run: >
+          python -m PyInstaller --noconfirm --clean --onedir --windowed --name SchoolSystem --icon assets\icon.ico
+          --add-data "manuals;manuals" --add-data "config.json;." --workpath build\pyi --specpath build\pyi school_system.py
+      - run: choco install innosetup -y --no-progress
+      - run: '& "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" build\windows\installer.iss'
+      - uses: actions/upload-artifact@v4
+        with: { name: SchoolSystemSetup-windows, path: output/SchoolSystemSetup.exe }
+  mac:
+    strategy:
+      matrix:
+        os: [macos-13, macos-14]      # Intel and Apple-silicon Macs
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: bash build/mac/build_mac.sh
+      - uses: actions/upload-artifact@v4
+        with: { name: 'SchoolSystem-mac-${{ matrix.os }}', path: output/*.dmg }
